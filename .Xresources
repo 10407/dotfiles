@@ -9,15 +9,16 @@ Xft.rgba: rgb
 Xft.dpi: 96
 
 ! Set the font
-URxvt*font: xft:monospace:pixelsize=14
-URxvt*boldFont: xft:monospace:pixelsize=14
+! URxvt*font: xft:monospace:pixelsize=11
+URxvt*font: xft:Source Code Pro for Powerline:size=11
+URxvt*boldFont: xft:Source Code Pro for Powerline:size=11
 URxvt*lineSpace: 1
 
 ! Disable scrollbar
 URxvt.scrollBar: false
 
 ! Set terminal padding
-URxvt.internalBorder: 15
+! URxvt.internalBorder: 15
 
 ! Colors {{{
 
