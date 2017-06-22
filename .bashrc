@@ -1,4 +1,5 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.  # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
 # If not running interactively, don't do anything
@@ -36,7 +37,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-color|*-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -111,14 +112,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
 # Custom alias
-alias vimx='vim -c %\!xxd'
-alias l.='ls -d .* --color=auto'
-alias ll='ls -l --color=auto'
-alias gitg='git log --graph --oneline --decorate --all'
 alias s='sudo '
-alias iip="sudo /sbin/ifconfig wlan0|grep inet|head -1|sed 's/\:/ /'|awk '{print $3}'"
+alias ll='ls -alh --color=auto'
+alias l='ls -la --color=auto'
+alias grep="grep --color"
+
+alias gitg='git log --graph --oneline --decorate --all'
+alias vimx='vim -c %\!xxd'
+alias iip="sudo /sbin/ifconfig eth0|grep inet|head -1|sed 's/\:/ /'|awk '{print $3}'"
 
 # Change umask to make directory sharing easier
 umask 0002
@@ -130,6 +132,7 @@ export HISTSIZE=1000
 
 # Custom Terminal prompt
 PS1='\W \$ '
+#PS1="\h:\W \u\$ "
 
 # Add ~/bin to PATH
-export PATH=$PATH:~/bin
+#export PATH=$PATH:~/bin
