@@ -121,6 +121,7 @@ alias grep="grep --color"
 alias gitg='git log --graph --oneline --decorate --all'
 alias vimx='vim -c %\!xxd'
 alias iip="sudo /sbin/ifconfig eth0|grep inet|head -1|sed 's/\:/ /'|awk '{print $3}'"
+alias evince='mupdf'
 
 # Change umask to make directory sharing easier
 umask 0002
