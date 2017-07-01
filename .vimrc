@@ -26,6 +26,5 @@ set makeprg=make\ %:r
 set guifont=Monospace:h14
 syntax on
 
-
 " map keys
 map <F3> :!pdflatex a.tex<CR>
