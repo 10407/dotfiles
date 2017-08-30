@@ -10,8 +10,8 @@ Xft.dpi: 96
 
 ! Set the font
 ! URxvt*font: xft:monospace:pixelsize=11
-URxvt*font: xft:Source Code Pro for Powerline:size=11
-URxvt*boldFont: xft:Source Code Pro for Powerline:size=11
+URxvt*font: xft:Fira Mono:size=11
+URxvt*boldFont: xft:Fira Mono:size=11
 URxvt*lineSpace: 1
 
 ! Disable scrollbar
