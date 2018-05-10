@@ -15,7 +15,10 @@ URxvt*boldFont: xft:Fira Mono:size=11
 URxvt*lineSpace: 1
 
 ! Disable scrollbar
+URxvt.intensityStyles: false
 URxvt.scrollBar: false
+URxvt.cursorColor: white
+URxvt.depth: 32
 
 ! Set terminal padding
 ! URxvt.internalBorder: 15
