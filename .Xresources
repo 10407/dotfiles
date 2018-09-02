@@ -1,4 +1,8 @@
 ! Dylans Xresources
+! special
+*foreground:   #f0f0f0
+*background:   #1b1918
+*cursor:  #a8a19f
 
 Xft.lcdfilter: lcddefault
 Xft.antialias: true
@@ -19,16 +23,19 @@ URxvt.intensityStyles: false
 URxvt.scrollBar: false
 URxvt.cursorColor: white
 URxvt.depth: 32
+URxvt.background: [70]#383838
+
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
+
+Vim.internalBorder: 0
+Vim.background: black
 
 ! Set terminal padding
 ! URxvt.internalBorder: 15
 
 ! Colors {{{
 
-! special
-*foreground:   #f0f0f0
-*background:   #1c1c1c
-*cursorColor:  #f0f0f0
 
 ! black
 ! Second black is grey
